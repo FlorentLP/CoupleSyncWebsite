@@ -156,65 +156,65 @@ function App() {
             </h3>
           </div>
 
-          <div className="space-y-8">
-            <div className="grid md:grid-cols-2 gap-12 items-center">
-              <div className="order-2 md:order-1">
-                <div className="rounded-3xl overflow-hidden aspect-[3/4] shadow-2xl">
-                  <img 
-                    src="/ideas.jpg" 
-                    alt="Ideas feature - Date ideas and activity suggestions" 
-                    className="w-full h-full object-cover"
-                  />
-                </div>
+          <div className="grid md:grid-cols-3 gap-8">
+            {/* Agenda */}
+            <div className="text-center space-y-6">
+              <div className="rounded-3xl overflow-hidden shadow-2xl mx-auto max-w-xs">
+                <img 
+                  src="/agenda.jpg" 
+                  alt="Agenda feature - Shared timeline for important dates" 
+                  className="w-full h-[670px] object-cover"
+                  style={{ objectPosition: `center -30px` }}
+                />
               </div>
-              <div className="space-y-4 order-1 md:order-2">
+              <div className="space-y-4">
+                <div className="inline-block bg-couple-lavender text-white px-6 py-2 rounded-full text-sm font-semibold">
+                  Agenda
+                </div>
+                <h3 className="text-2xl font-bold text-couple-black">Shared timeline for important dates</h3>
+                <p className="text-gray-600 leading-relaxed">
+                  Keep track of anniversaries, trips, and special moments. Both of you stay in sync, automatically.
+                </p>
+              </div>
+            </div>
+
+            {/* Ideas */}
+            <div className="text-center space-y-6">
+              <div className="rounded-3xl overflow-hidden shadow-2xl mx-auto max-w-xs">
+                <img 
+                  src="/ideas.jpg" 
+                  alt="Ideas feature - Date ideas and activity suggestions" 
+                  className="w-full h-[670px] object-cover"
+                  style={{ objectPosition: `center -30px` }}
+                />
+              </div>
+              <div className="space-y-4">
                 <div className="inline-block bg-couple-pink text-white px-6 py-2 rounded-full text-sm font-semibold">
                   Ideas
                 </div>
-                <h3 className="text-3xl font-bold text-couple-black">Date ideas, activity suggestions</h3>
-                <p className="text-lg text-gray-600 leading-relaxed">
+                <h3 className="text-2xl font-bold text-couple-black">Date ideas, activity suggestions</h3>
+                <p className="text-gray-600 leading-relaxed">
                   Save all your date ideas, activities, and places you want to try. No more forgetting that cute café or weekend plan.
                 </p>
               </div>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-12 items-center">
+            {/* Watchlist */}
+            <div className="text-center space-y-6">
+              <div className="rounded-3xl overflow-hidden shadow-2xl mx-auto max-w-xs">
+                <img 
+                  src="/watchlist.jpg" 
+                  alt="Watchlist feature - Movies and shows to watch together" 
+                  className="w-full h-[670px] object-cover"
+                  style={{ objectPosition: `center -30px` }}
+                />
+              </div>
               <div className="space-y-4">
-                <div className="inline-block bg-couple-lavender text-white px-6 py-2 rounded-full text-sm font-semibold">
-                  Agenda
-                </div>
-                <h3 className="text-3xl font-bold text-couple-black">Shared timeline for important dates</h3>
-                <p className="text-lg text-gray-600 leading-relaxed">
-                  Keep track of anniversaries, trips, and special moments. Both of you stay in sync, automatically.
-                </p>
-              </div>
-              <div className="order-2">
-                <div className="rounded-3xl overflow-hidden aspect-[3/4] shadow-2xl">
-                  <img 
-                    src="/agenda.jpg" 
-                    alt="Agenda feature - Shared timeline for important dates" 
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-              </div>
-            </div>
-
-            <div className="grid md:grid-cols-2 gap-12 items-center">
-              <div className="order-2 md:order-1">
-                <div className="rounded-3xl overflow-hidden aspect-[3/4] shadow-2xl">
-                  <img 
-                    src="/watchlist.jpg" 
-                    alt="Watchlist feature - Movies and shows to watch together" 
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-              </div>
-              <div className="space-y-4 order-1 md:order-2">
                 <div className="inline-block bg-couple-black text-white px-6 py-2 rounded-full text-sm font-semibold">
                   Watchlist
                 </div>
-                <h3 className="text-3xl font-bold text-couple-black">Movies & shows to watch together</h3>
-                <p className="text-lg text-gray-600 leading-relaxed">
+                <h3 className="text-2xl font-bold text-couple-black">Movies & shows to watch together</h3>
+                <p className="text-gray-600 leading-relaxed">
                   Stop scrolling for 30 minutes. Add shows you both want to watch and pick one in seconds.
                 </p>
               </div>
