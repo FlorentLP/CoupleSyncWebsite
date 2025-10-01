@@ -1,4 +1,4 @@
-import { Heart, Calendar, Film, Sparkles, CheckCircle2 } from 'lucide-react';
+import { Heart, Sparkles, CheckCircle2 } from 'lucide-react';
 
 // App Store Logo Component
 const AppStoreLogo = ({ className }: { className?: string }) => (
@@ -63,20 +63,15 @@ function App() {
 
             <div className="relative">
               <div className="relative z-10 bg-white rounded-3xl shadow-2xl p-8 mx-auto max-w-sm">
-                <div className="aspect-[9/19] bg-gradient-to-br from-couple-pink to-couple-lavender rounded-2xl flex items-center justify-center relative overflow-hidden">
-                  {/* Background glow effect */}
-                  <div className="absolute inset-0 bg-gradient-to-br from-white/10 to-transparent"></div>
+                <div className="aspect-[9/19] rounded-2xl flex items-center justify-center relative overflow-hidden">
+                  {/* Hero image background */}
+                  <img 
+                    src="/hero.png" 
+                    alt="Couple using CoupleSync app" 
+                    className="absolute inset-0 w-full h-full object-cover rounded-2xl"
+                  />
                   
-                  <div className="text-center text-white space-y-6 p-8 relative z-10">
-                    <div className="relative">
-                      <MobileAppIcon size="w-24 h-24" className="mx-auto animate-pulse" />
-                      {/* Additional glow rings */}
-                      <div className="absolute inset-0 w-24 h-24 mx-auto rounded-full border border-white/20 animate-ping"></div>
-                      <div className="absolute inset-2 w-20 h-20 mx-auto rounded-full border border-white/10 animate-ping animation-delay-1000"></div>
-                    </div>
-                    <h3 className="text-2xl font-bold">CoupleSync</h3>
-                    <p className="text-sm opacity-90">Your shared space for everything</p>
-                  </div>
+                  
                 </div>
               </div>
               <div className="absolute top-10 -right-4 bg-couple-pink rounded-full p-4 shadow-lg animate-bounce">
@@ -164,8 +159,12 @@ function App() {
           <div className="space-y-8">
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div className="order-2 md:order-1">
-                <div className="bg-couple-pink/10 rounded-3xl p-12 aspect-[4/3] flex items-center justify-center">
-                  <Sparkles className="w-32 h-32 text-couple-pink" />
+                <div className="rounded-3xl overflow-hidden aspect-[3/4] shadow-2xl">
+                  <img 
+                    src="/ideas.jpg" 
+                    alt="Ideas feature - Date ideas and activity suggestions" 
+                    className="w-full h-full object-cover"
+                  />
                 </div>
               </div>
               <div className="space-y-4 order-1 md:order-2">
@@ -190,16 +189,24 @@ function App() {
                 </p>
               </div>
               <div className="order-2">
-                <div className="bg-couple-lavender/10 rounded-3xl p-12 aspect-[4/3] flex items-center justify-center">
-                  <Calendar className="w-32 h-32 text-couple-lavender" />
+                <div className="rounded-3xl overflow-hidden aspect-[3/4] shadow-2xl">
+                  <img 
+                    src="/agenda.jpg" 
+                    alt="Agenda feature - Shared timeline for important dates" 
+                    className="w-full h-full object-cover"
+                  />
                 </div>
               </div>
             </div>
 
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div className="order-2 md:order-1">
-                <div className="bg-couple-black/10 rounded-3xl p-12 aspect-[4/3] flex items-center justify-center">
-                  <Film className="w-32 h-32 text-couple-black" />
+                <div className="rounded-3xl overflow-hidden aspect-[3/4] shadow-2xl">
+                  <img 
+                    src="/watchlist.jpg" 
+                    alt="Watchlist feature - Movies and shows to watch together" 
+                    className="w-full h-full object-cover"
+                  />
                 </div>
               </div>
               <div className="space-y-4 order-1 md:order-2">
